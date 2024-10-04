@@ -21,18 +21,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(new Animation(this));
 
-        button = findViewById(R.id.button);
-        fractal = findViewById(R.id.fractal);
-        editText = findViewById(R.id.editText);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int r = Integer.parseInt(editText.getText().toString());
-                fractal.setR(r);
-            }
-        });
+//        button = findViewById(R.id.button);
+//        fractal = findViewById(R.id.fractal);
+//        editText = findViewById(R.id.editText);
+//
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                int r = Integer.parseInt(editText.getText().toString());
+//                fractal.setR(r);
+//            }
+//        });
     }
 }
